@@ -1,0 +1,132 @@
+About:
+The Terran Stellar Navy Expansion
+Version 2.017, March 2021
+For Artemis Version 2.7.5
+
+-----------------Credits ------------------
+  3D Design and Creation   Maurice (JMR) (NPC Ships: Hijordan, N'tani, Euphine Pirates, various static models)
+  3D Design and Creation   Gabriel Wade (NPC Ships: Patrol Ship, Corvette and Player ships: Heavy Cruiser, Minelayer, and Nemesis) & Thomas Avirson (Jump Gates, Ship Models)
+  3D Design and Creation   Xavier Wise (NPC Ships: Rumarians, Slingshot parts and others)
+  3D Design and Creation   Avirson (NPC Ships: Dinkuno & Sechatzal. Jumpgates and other models)
+  Balance and Tweaking     Fish Evans & Xavier Wise
+  Player Ship Internals    Jemel, Xavier Wise & Rakaydos
+  NPC Node Layout          Yooey, Rakaydos & Starry
+  Ship Stats Design	   Xavier Wise, Rakaydos
+  Assistance from          Gebbens, Matsiyan and other members the TSN RP Community
+  Executive Producer       Xavier Wise
+-------------------------------------------
+
+
+Installation
+To install drag and drop all files into the Artemis directory
+There are several files overwritten including UI files, the vesselData.xml and artemis.ini.
+In addition, new files are created. These include new ship types, other new objects and other Mod files.
+
+Enabling and Disabling the Mod
+There are two options: 
+Enable/Disable the whole Mod
+To Disable the mod, run the "zDisable Expansion.bat" file. This will replace all modified files in the Artemis folder with the original game files.
+To Enable the mod, run the "zEnable Expansion.bat" file. This will replace all relavant files in the Artemis folder with modified files from the Expansion.
+--- If you would like to view what files are being replace, simply open the "zEnable Expansion.bat" or "zDisable Expansion.bat" files using Notepad.---
+
+Enable/Disable the UI elements ONLY
+To Disable just the UI elements (target reticle, science/captain's reticle and shield UI), run the "zUI Disable.bat" file. This will replace the relevant files in the Artemis folder with the original game files.
+To Enable just the UI elements, run the "zUI Enable.bat" file. This will replace the relevant files in the Artemis folder with the relevant modified files from the Expansion.
+--- If you would like to view what files are being replace, simply open the "zUI Enable.bat" or "zUI Disable.bat" files using Notepad.---
+
+==================================================
+Details of Licensed Use of Models
+------------------------------------------------
+1) GasExtractor, TSNGateMk2, ScanPost & Hegmony Dry Dock are Licensed models and textures. License held by Fish Evans on behalf of TSN Mod CGTR 3278806 from CGtrader Package ID 446961. Useage reserved for TSN Mod/ TSN Community Projects. 2021-01-25 
+
+
+
+==================================================
+Modifications
+------------------------------------------------
+Additional and up-to-date notes can be found on the GitHub repository: https://github.com/tsnrp/mod
+
+This Version 2.017
+New: TSNGateMk2 Files
+New: GasExtractor Hegmony industrial facility for placment in nebulars
+New: Logistics Post Hegmony industrial facility
+New: Hegmony Dry Dock
+New: Kralian Tug ship
+New: Kralian Astro Cannon + shell
+Modified: Arvonian fighter to a Wing with assotiated changes to carrier load of Arvionian Carriers (Lag reduction effort)
+Fixed: Removed double slashes in file paths of a number of vesselData entrys, may or may not of been causeing issues for some systems.
+
+------------------------------------------------
+File Additions/Changes (excluding those relating to new vessels)
+
+Version 2.016
+Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
+
+------------------------------------------------
+VesselData Changes:
+Changed Veseldata - spelling, typographical
+Changed Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
+
+Older
+Replaced: Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+Changed: Veseldata - spelling, typographical
+Changed: Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
+Replaced: Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
+Changed: many NPC node locations to work - thanks to  Yooey, Rakaydos & Starry
+Changed: Torpedo and Phase Shock Torpedo stats now back in line with mirror universe edition now that the option works again, to be monitored as may reqire further fine tuneing!
+Added Slingshot components
+Added MineSweeper (Hull 4101)
+Added new races 20-22
+Changed: Stats on Zeus Athena (nerf) and new internal for Zeus.
+Changed: hullRace 'Terran' to 'USFP'
+Added hullRace 9 - 18: USFP, N'Tani, Hjorden, Unakalhai, Caltron, Euphini Pirates, Kralien, Arvonian, Torgoth, Rumarian
+Added Player ships 17 - 25: Nemesis Interceptor, Ares Class Light Cruiser, Valkyrie Class Light Cruiser, Apollo Class Light Cruiser, Orion Class Scout, Scout Mk2
+	Allegiance Class Battlecruiser, Athena Class Cataphract cruiser, Zeus Class Dreadnaught
+Added NPC TSN Ships: 1700 - 1707: Ares II class, Alliegence class, Apollo class, Valkyrie class, Nemesis class, Athena class, Zeus class
+Added Single-seat ships 200 - 201: Superiority Fighter, Heavy bomber
+Added Static and bases 1050 - : Denabite refinery, Factory, TSN Weapons Platform, USFP Shipyard, Sensor & Comms relays, N'Tani base, Pirate asteroid base, Hegemony defense platform
+Added new broad types: daemon (for USN heavy ships), static (for neutrals that do not move), industrial (for factory and refinary facilities), 
+	network (for relays and buoys), transport (for ship carrying personnel ie not cargo)
+Changed: standard player vessel Light Cruiser to Artemis Class and updated descriptions
+Changed: Shields and beam damage reduced by a factor of 4.
+Changed: shipEfficiency improved to 0.6
+Changed: warpefficiency improved to 0.3
+Changed: Fighter shields reduced to 0 across all fighters.
+Changed: "Type 4" for biomech to "Stage 4" for consistency.
+Changed: Stations now have front and rear shield data included in vesselData entry
+Changed: Reference to TSN in Artemis long description removed
+Added USN Daemon Class vessels 1750 - 1755: Retarius, Sagittarius, Thraex, Samnite and Velite
+Added Rumarian race 7500 - 7501: Stalker and Hunter
+Added Ulikai race 7600 - 7612: Modified Kralien ships
+Added Ulikai race bases 1400-1450
+Added: Additional assets - Hegemony Sensor Buoy and Comms Relay, USFP Sensor Buoy and Comms Relay
+
+------------------------------------------------
+Artemis.ini Changes:
+Nill
+
+Older
+playerShieldRechargeRate set to 0.1
+enemyShieldRechargeRate set to 0.05
+energyUseCoeff set to 0.6
+energyCoeffBeams set to 10
+energyCoeffTubes set to 10
+energyCoeffWarp set to 1
+energyCoeffFrontShlds set to 8
+energyCoeffRearShlds set to 8
+playerBeamDelay set to 0.6
+torpEnergyValue set to 50
+torpEnergyCostValue set to 75
+friendlyBeamDamageCap set to 7
+lowStartStationTorpNuk set to 2
+highStartStationTorpNuk set to 6
+lowStartStationTorpEmp set to 6
+highStartStationTorpEmp set to 20
+lowStartStationTorpShk set to 6
+highStartStationTorpShk set to 10
+
+======================================================
+======================================================
+End of File.
+======================================================
